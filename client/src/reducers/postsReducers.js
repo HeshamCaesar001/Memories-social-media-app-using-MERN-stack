@@ -22,6 +22,6 @@ export default (state = [], action) => {
         case FETCH_BY_SEARCH:
              return {...state,posts:action.payload};
         default:
-            return true;
+            return state;
     }
 }           

@@ -16,7 +16,6 @@ function Post({post,setCurrentId}){
     const user = JSON.parse(localStorage.getItem('profile'));
     const location = useLocation();
 
-
     const Likes = () => {
         if (post.likes.length > 0) {
           return post.likes.find((like) => like === user?.result?._id)

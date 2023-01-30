@@ -1,6 +1,5 @@
 import Jwt from 'jsonwebtoken';
-import dotenv from 'dotenv'
-dotenv.config()
+
 const auth = async (req,res,next)=>{
     let decodedData ;
     try {
